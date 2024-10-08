@@ -1,1 +1,2 @@
-This is the 1st assignmnet for session 1 in python of data science.
+This is the assignmnet for each session in python of data science.
+eg: exercise for session 1 is qisang- lin- assgin
