@@ -1,4 +1,4 @@
-Python Programming assignment1 which is
+Python Programming assignment1 which is QISANG LIN PYTHON ASSIGNMENT1.ipynb
 
 Overview
 This repository contains a series of exercises designed to enhance your understanding of Python programming. Each exercise focuses on different concepts, from basic syntax to advanced data structures. 
