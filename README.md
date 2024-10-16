@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is the assignmnet for exercise for session 3 is QISANG LIN ASSIGNMENT 3 PYTHON and it's in the branch of assigment3.
 **#Overview**
 This project implements a Course Registration System using Python object-oriented programming concepts. The system manages students, courses, and grades, and provides functionalities to enroll students in courses, assign grades, and calculate a student's GPA (Grade Point Average).
@@ -39,3 +40,6 @@ Prerequisites:
 Python 3.x installed on your system.
 Running the Jupyter Notebook:
 Open the QISANG LIN ASSIGNMENT 3 PYTHON.ipynb file in a Jupyter Notebook environment (Jupyter Lab, Jupyter Notebook, or any IDE that supports Jupyter Notebooks like VSCode).
+=======
+Here are asssignments of Python Programmin, you can find every assignment in its folder. For, example, name of assignment1 which is QISANG LIN PYTHON ASSIGNMENT1.ipynb.
+>>>>>>> 3af12aff6ee87bcc1116cb2e694d4bcd4c07018d
