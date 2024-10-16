@@ -1,4 +1,5 @@
 This is the assignmnet for exercise for session 3 is QISANG LIN ASSIGNMENT 3 PYTHON and it's in the branch of assigment3,folder assignent3.
+
 **#Overview**
 This project implements a Course Registration System using Python object-oriented programming concepts. The system manages students, courses, and grades, and provides functionalities to enroll students in courses, assign grades, and calculate a student's GPA (Grade Point Average).
 
@@ -6,6 +7,7 @@ The system consists of three main classes:
 Student: Represents a student with a unique ID and the ability to enroll in courses and manage grades.
 Course: Represents a course with a name and description.
 Registration: A central class that manages students and courses, and provides the logic for enrollment, dropping courses, and GPA calculation.
+
 **Features**
 
 Student Class:
@@ -34,6 +36,7 @@ Drop students from courses.
 Set grades for students in specific courses.
 Show all students and all available courses.
 Calculate and display a student’s GPA based on their grades.
+
 **How to Run the Program**
 Prerequisites:
 Python 3.x installed on your system.
