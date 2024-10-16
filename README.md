@@ -1,5 +1,5 @@
 assignment2
-This is the Python Exercises for session 2, named as QISANG LIN PYTHON ASSIGNMENT2.ipynb
+This is the Python Exercises for session 2, named as QISANG LIN PYTHON ASSIGNMENT2.ipynb, it's in folder Assignment2.
 
 Overview
 This repository contains exercises designed to reinforce essential Python programming concepts. The final four exercises focus on practical applications of functions, data manipulation, and basic programming logic.
