@@ -22,5 +22,9 @@ Key Concepts Covered
 - Objective: Write a function to convert Celsius temperatures to Fahrenheit.
 - Key Learning: Function creation and mathematical operations.
 
-This is the assignmnet for each session in python of data science. You can find assignments in different braches. eg: exercise for session 1 is QISANG LIN ASSIGNMENT 1 PYTHON and it's in the branch of assigment1
-main
+How to Run the Program
+
+Prerequisites:
+Python 3.x installed on your system.
+Running the Jupyter Notebook:
+Open the QISANG LIN ASSIGNMENT 3 PYTHON.ipynb file in a Jupyter Notebook environment (Jupyter Lab, Jupyter Notebook, or any IDE that supports Jupyter Notebooks like VSCode).
