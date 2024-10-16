@@ -39,6 +39,7 @@ Show all students and all available courses.
 Calculate and display a student’s GPA based on their grades.
 
 **How to Run the Program**
+
 Prerequisites:
 Python 3.x installed on your system.
 Running the Jupyter Notebook:
