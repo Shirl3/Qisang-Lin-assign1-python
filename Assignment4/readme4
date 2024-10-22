@@ -1,0 +1,45 @@
+Here's QISANG LIN assignment 4 about python for data science, it's in QISANG LIN ASSIGNMENT 4 PYTHON.ipynb.
+ 
+## Overview
+
+This project implements an annotation analysis system in Python, designed to process and manage annotation files from satellite data. The system verifies the file naming conventions, organizes annotations by month, and extracts valuable information such as the number of annotations per satellite and unique regions.
+
+The system consists of the following tasks:
+1. Count the total number of annotation files in a specified folder.
+2. Verify how many of these files follow the defined naming convention.
+3. Count annotations per month and year, identifying which month has the most files.
+4. Organize annotations into subfolders corresponding to each month.
+5. List all annotations from the most recent to the oldest based on the filename's date and time.
+6. Count unique satellite numbers, the number of annotations per satellite, and identify the most recent satellite used.
+7. Determine the number of unique regions and list their names.
+
+## Libraries Used
+
+The following libraries were utilized in this project:
+- **Numpy**: For numerical operations.
+- **Scipy**: For scientific computing.
+- **Math**: For mathematical functions.
+- **os**: For operating system dependent functionalities.
+- **glob**: For file pattern matching.
+- **shutil**: For file operations such as copying and moving.
+- **Json**: For handling JSON data.
+- **pickle**: For serializing and deserializing Python objects.
+- **parquet**: For working with Parquet file format.
+- **re**: For regular expressions to validate file names.
+- **time**: For handling time-related tasks.
+- **datetime**: For manipulating dates and times.
+
+## Features
+
+- **Count Files**: Total number of annotation files in a specified directory.
+- **File Validation**: Check if the filenames conform to the specified naming convention.
+- **Monthly Counts**: Group annotations by month and year, identifying the month with the highest count.
+- **Organize Files**: Create new folders for each month and move corresponding annotation files.
+- **Sort Annotations**: List annotations sorted by date from most recent to oldest.
+- **Satellite Analysis**: Count different satellite numbers, the number of annotations for each satellite, and identify the latest satellite used.
+- **Unique Regions**: Count and list unique regions from the annotation files.
+
+## How to Run the Program
+
+- Prerequisites: Python 3.x installed on your system.
+- Running the Script: Execute the script in a Python environment or terminal after placing the annotation files in the specified directory.
