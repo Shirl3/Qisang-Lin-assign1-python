@@ -1,0 +1,83 @@
+**QISANG LIN ASSIGNMENT5 PYTHON** notebook:
+
+---
+
+### **README.md**
+
+# **Session 5: Understanding Tree-Based Methods**
+
+## **Overview**
+This session explores tree-based machine learning methods, focusing on strategies to manage overfitting and improve model performance. Specifically, the notebook addresses pruning, bagging, and boosting techniques using datasets relevant to credit scoring.
+
+## **Objectives**
+1. **Pruning in Decision Trees**:
+   - Analyze the impact of different pruning strategies using `DecisionTreeClassifier` from SciKit-learn.
+   - Mitigate overfitting by controlling tree size.
+2. **Bagging with Random Forests**:
+   - Investigate the performance improvements offered by bagging techniques in ensemble methods.
+3. **Boosting with XGBoost**:
+   - Solve classification tasks using the `XGBoost` library for advanced boosting techniques.
+4. **Dataset Analysis**:
+   - Work with a credit scoring dataset to predict individual credit defaults.
+   - Understand feature importance and data imbalances.
+
+## **Dataset**
+The credit scoring dataset contains 11 columns, representing various financial attributes of individuals. The target variable indicates whether an individual defaults (1) or does not default (0). Features include:
+- **Target**: Default indicator (binary: 0 or 1)
+- **Revolving Credit Percent**: Ratio of balance to limit.
+- **Age**: Individual's age (in years).
+- **Debt Ratio**: Monthly debt payments to income ratio.
+- **Monthly Income**: Income of the individual (currency units).
+- Additional metrics on late payments, credit lines, and dependents.
+
+Dataset Download: [credit_scoring.csv](https://github.com/jnin/information-systems/raw/main/data/credit_scoring.csv)
+
+## **Structure**
+- **Exercise 1**:
+  - Load the dataset into a pandas DataFrame.
+  - Split the data into features (`X`) and target (`y`).
+  - Evaluate class balance in the target variable using `value_counts`.
+- **Exercise 2**:
+  - Build a pipeline with a `StandardScaler` and `DecisionTreeClassifier`.
+  - Address data imbalance using `class_weight='balanced'`.
+  - Split data into training and test sets for evaluation.
+- **Exercise 3**:
+  - Implement pruning and visualize its effect on decision tree depth and performance.
+- **Exercise 4**:
+  - Explore random forest classifiers.
+  - Analyze the effect of bagging on model accuracy.
+- **Exercise 5**:
+  - Use `XGBoost` to perform classification on the dataset.
+  - Compare boosting performance with other methods.
+
+## **Setup**
+### **Dependencies**
+Ensure the following Python libraries are installed:
+- `numpy`
+- `pandas`
+- `scikit-learn`
+- `matplotlib`
+- `xgboost`
+
+### **Installation**
+Install the required libraries using pip:
+```bash
+pip install numpy pandas scikit-learn matplotlib xgboost
+```
+
+## **Usage**
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/session-5-tree-methods.git
+   ```
+2. Navigate to the directory and open the notebook:
+   ```bash
+   cd session-5-tree-methods
+   jupyter notebook session_5.ipynb
+   ```
+3. Follow the exercises sequentially to complete the session.
+
+## **Key Takeaways**
+- Effective pruning helps control overfitting in decision trees.
+- Bagging (via random forests) enhances model robustness by aggregating predictions.
+- Boosting methods like XGBoost can achieve superior performance by iteratively focusing on hard-to-predict instances.
