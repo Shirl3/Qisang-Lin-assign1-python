@@ -1,0 +1,66 @@
+# Session 8 - Data Visualization with Seaborn and Matplotlib
+
+## Overview
+
+This session focuses on exploring data visualization techniques using **Seaborn** and **Matplotlib**. The exercises guide the application of these libraries to visualize relationships, distributions, and trends in data.
+
+## Repository Structure
+
+- `session_8.ipynb`: The main notebook containing all the examples and exercises.
+- **Dependencies**: Python libraries used include:
+  - `pandas`
+  - `seaborn`
+  - `matplotlib`
+  - `numpy`
+
+## Exercises
+
+### 1. Lineplot for Study Time by Student Name
+
+This exercise visualizes how **Study Time** varies for different students using a lineplot. It also identifies the student with the highest study time.
+
+### 2. Histogram of Grades
+
+This exercise creates a histogram to analyze the distribution of **Grades** and their frequencies.
+
+### 3. ECDF Plot for Grades
+
+An ECDF plot is created to visualize the cumulative distribution of **Grades**. The percentage of students scoring less than 85 is calculated.
+
+### 4. Stripplot for Grade Distribution by Course
+
+This exercise uses a stripplot to show the distribution of **Grades** for each **Course**, identifying the course with the most spread in grades.
+
+### 5. Swarmplot for Study Time by Gender
+
+A swarmplot is created to visualize the relationship between **Gender** and **Study Time**, determining which gender has a higher average study time.
+
+### 6. Pointplot for Average Grade by Course
+
+This exercise uses a pointplot to show the average **Grade** for each **Course**, highlighting the course with the highest average grade.
+
+## Results
+
+The visualizations produced during this session demonstrate:
+- Clear insights into data distribution and relationships.
+- Practical applications of Seaborn and Matplotlib in data analysis.
+- Identification of key trends, such as the highest performers or outliers.
+
+## Getting Started
+
+### Prerequisites
+- Python 3.6 or higher
+- Install the required libraries:
+  ```bash
+  pip install pandas seaborn matplotlib numpy
+  ```
+
+### Running the Notebook
+1. Open the notebook:
+   ```bash
+   jupyter notebook QISANG LIN ASSIGNMENT 8 PYTHON.ipynb
+   ```
+
+## Acknowledgments
+
+This session is part of a broader curriculum to build expertise in data analysis and visualization using Python. If you have any questions, feel free to open an issue in the repository.
