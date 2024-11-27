@@ -1,0 +1,155 @@
+# Session 6: Data Analysis with Pandas
+
+## Overview
+
+This repository contains the learning materials and exercises for **Session 6**, focused on data analysis using **Pandas** in Python. Through real-world datasets, we explored methods for data cleaning, transformation, and aggregation, as well as insights extraction.
+
+---
+
+## Key Learning Points
+
+1. **Data Cleaning**:
+   - Counting missing values and filling them using appropriate strategies (e.g., mean, mode).
+   - Handling categorical and numerical data.
+
+2. **Data Transformation**:
+   - Filtering rows based on logical conditions.
+   - Creating new features, such as calculated columns.
+
+3. **Data Aggregation**:
+   - Using `groupby` and `agg` to summarize datasets.
+   - Identifying trends like the most frequent year of release or the average content age.
+
+4. **Practical Insights**:
+   - Working with real-world datasets (Netflix titles, Titanic passengers).
+   - Answering specific queries using Pandas.
+
+---
+
+## Exercises
+
+Below is a summary of the exercises and their objectives:
+
+### 1. Count Missing Values in Each Column
+```python
+missing_values_count = df.isna().sum()
+```
+Objective: Identify and count missing values in each column of the dataset.
+
+---
+
+### 2. Fill Missing `Age` Values with the Mean Age
+```python
+df['Age'].fillna(df['Age'].mean(), inplace=True)
+```
+Objective: Replace missing `Age` values with the average age to ensure data consistency.
+
+---
+
+### 3. Fill Missing `Embarked` Values with the Mode (Most Common Value)
+```python
+df['Embarked'].fillna(df['Embarked'].mode()[0], inplace=True)
+```
+Objective: Use the most frequently occurring value to fill missing `Embarked` data.
+
+---
+
+### 4. Filter and Display Passengers Who Paid a Fare Above the Average Fare
+```python
+average_fare = df['Fare'].mean()
+passengers_above_average_fare = df[df['Fare'] > average_fare]
+```
+Objective: Extract a subset of passengers who paid more than the average fare.
+
+---
+
+### 5. Add a New Column Indicating Family Size
+```python
+df['FamilySize'] = df['SibSp'] + df['Parch']
+```
+Objective: Calculate family size by summing siblings/spouses and parents/children columns.
+
+---
+
+### 6. Number of Films in 2021 Corresponding to a Specific Country
+```python
+your_country = "China"
+films_2021_country = df[(df['release_year'] == 2021) & (df['country'] == your_country)]
+```
+Objective: Count how many films were released in 2021 in a specified country.
+
+---
+
+### 7. Add a Column Showing Content Age
+```python
+from datetime import datetime
+current_year = datetime.now().year
+df['content_age'] = current_year - df['release_year']
+```
+Objective: Compute how many years have passed since each content was released.
+
+---
+
+### 8. Number of Movies in 2020 with Full Information
+```python
+movies_2020 = df.loc[(df['release_year'] == 2020) & (df['type'] == 'Movie')].shape[0]
+```
+Objective: Count the number of movies released in 2020 (no missing values).
+
+---
+
+### 9. Find the Year with the Most Titles
+```python
+year_with_most_titles = df.groupby('release_year')['title'].count().idxmax()
+```
+Objective: Determine which year had the highest number of titles.
+
+---
+
+### 10. Calculate the Average Releases per Year Since 2010
+```python
+df_2010_onward = df[df['release_year'] >= 2010]
+releases_per_year = df_2010_onward.groupby('release_year')['title'].count()
+average_releases = releases_per_year.mean()
+```
+Objective: Compute the average number of releases per year since 2010.
+
+---
+
+## Dataset
+The exercises in this session were completed using the following datasets:
+- **Netflix Titles Dataset**: Contains information about movies and TV shows available on Netflix.
+- **Titanic Dataset**: Provides details about passengers on the Titanic, including demographics and survival status.
+
+---
+
+## Requirements
+
+The exercises were conducted in Python using the following libraries:
+- `pandas`
+- `datetime`
+- `numpy` (optional, for numerical calculations)
+
+Install dependencies with:
+```bash
+pip install pandas numpy
+```
+
+---
+
+## Usage
+
+To run the code for this session:
+1. Download the datasets (`netflix_titles.csv`, `titanic.csv`).
+2. Load them into a Pandas DataFrame using:
+   ```python
+   df = pd.read_csv('path_to_dataset.csv')
+   ```
+3. Execute the exercises as described above.
+
+---
+
+## Contributing
+
+Contributions are welcome! Feel free to submit a pull request or open an issue if you have suggestions or questions.
+
