@@ -1,0 +1,78 @@
+# README for SESSION 7
+
+## Overview
+
+This assignment focuses on data manipulation and transformation using the **Pandas** library in Python. The tasks include handling missing data, string manipulations, merging and joining datasets, and working with regular expressions. These exercises aim to enhance your proficiency in data processing using Python.
+
+## Contents
+
+The notebook is structured into the following sections:
+
+1. **Data Preparation**
+   - Importing necessary libraries.
+   - Setting up initial datasets.
+2. **String Manipulations**
+   - Extracting specific characters or patterns using regular expressions.
+   - Transforming string data, such as converting to lowercase or replacing characters.
+3. **DataFrame Operations**
+   - Creating and adding new columns based on transformations.
+   - Splitting columns into multiple ones.
+   - Checking for the existence of specific patterns in strings.
+4. **Exercises**
+   - Practical tasks to apply the concepts covered:
+     - Extracting initials from names.
+     - Joining multiple DataFrames based on a key column.
+     - Combining datasets using merging techniques.
+     - Extracting specific substrings, such as last names.
+
+## Installation
+
+To run this notebook, ensure you have the following installed:
+
+- Python 3.6 or higher
+- Required Python libraries:
+  - `pandas`
+  - `numpy`
+
+Install the libraries using:
+
+```bash
+pip install pandas numpy
+```
+
+## Usage
+
+1. Open the notebook:
+
+   ```bash
+   jupyter notebook "QISANG LIN ASSIGNMENT 7 PYTHON.ipynb"
+   ```
+
+2. Execute the cells sequentially to observe the output.
+
+## Exercises and Results
+
+### Exercise 1: Creating Initials
+
+- **Task:** Extract the initials of professors' names from a given dataset.
+- **Solution:** Added a column `professor_initials` by splitting names and concatenating the first letters.
+
+### Exercise 2: Joining DataFrames
+
+- **Task:** Combine the original DataFrame with a new one based on the `professor` column using the `join` method.
+- **Result:** Successfully joined datasets, adding a new column with course details.
+
+### Exercise 3: Merging DataFrames
+
+- **Task:** Merge the original and additional DataFrames into a single unified dataset.
+- **Solution:** Used `pd.merge` to perform an inner join on the `professor` column.
+
+### Exercise 4: Extracting Last Names
+
+- **Task:** Create a new column containing only the last names of professors.
+- **Result:** Extracted last names using string operations and added them to a new column.
+
+## Acknowledgments
+
+This assignment is inspired by real-world data manipulation tasks and aims to build a strong foundation in Python's data analysis capabilities using Pandas.
+
